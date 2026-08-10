@@ -334,9 +334,15 @@ nav ul li{
     font-size:24px;
 }
 
-.card p{
-    color:#ccc;
-    line-height:1.6;
+.card p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 .search-section{
     width:90%;
