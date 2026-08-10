@@ -424,20 +424,15 @@ nav ul li{
 }
 /* Product Details */
 
-.product-details{
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    gap:60px;
-
-    padding:80px 10%;
-
-    flex-wrap:wrap;
-
+.product-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 10%;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .product-details img {
