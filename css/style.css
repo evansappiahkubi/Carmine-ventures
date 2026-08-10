@@ -440,17 +440,17 @@ nav ul li{
 
 }
 
-.product-image img{
-
-    width:450px;
-
-    max-width:100%;
-
-    border-radius:15px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.4);
-
+.product-details img {
+    width: 45%;
+    max-width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    object-fit: contain;
+    background: #f5f5f5;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
+
+
 
 .product-info{
 
