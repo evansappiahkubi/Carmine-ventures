@@ -212,6 +212,22 @@ footer{
 }
 
 @media(max-width:768px){
+    .product-details {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 40px 5%;
+}
+
+.product-details img {
+    width: 100%;
+    max-width: 500px;
+    height: 320px;
+}
+
+.product-info {
+    width: 100%;
+    max-width: 500px;
+}
 
 nav{
     flex-direction:column;
@@ -428,21 +444,21 @@ nav ul li{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    padding: 80px 5%;
+    gap: 40px;
+    padding: 60px 3%;
     flex-wrap: nowrap;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
 .product-details img {
-    width: 42%;
-    max-width: 500px;
-    height: 350px;
+    width: 45%;
+    max-width: 550px;
+    height: 420px;
     border-radius: 10px;
     object-fit: contain;
-    background: #f5f5f5;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    background: transparent;
+    box-shadow: none;
 }
 
 .product-info {
