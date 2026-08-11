@@ -428,15 +428,15 @@ nav ul li{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
-    padding: 80px 10%;
-    flex-wrap: wrap;
+    gap: 50px;
+    padding: 80px 5%;
+    flex-wrap: nowrap;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .product-details img {
-    width: 45%;
+    width: 42%;
     max-width: 500px;
     height: 350px;
     border-radius: 10px;
