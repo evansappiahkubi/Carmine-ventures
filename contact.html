@@ -49,7 +49,12 @@
         <h2>Get In Touch</h2>
 
         <p><strong>📞 Phone:</strong> <a href="tel:+233245198081">+233 24 518 8081</a>
-
+<p>
+    <strong>💬 WhatsApp:</strong>
+    <a href="https://wa.me/+233504368692?text=Hello%20Carmine%20Ventures%2C%20I%27d%20like%20to%20make%20an%20inquiry." target="_blank">
+        Chat with us on WhatsApp
+    </a>
+</p>
         <p><strong>📧 Email:</strong> info@carmineventures.com</p>
 
         <p><strong>📍 Location:</strong> Kumasi, Ashanti Region, Ghana</p>
@@ -66,19 +71,17 @@
 
         <h2>Send Us a Message</h2>
 
-        <form>
+        <form id="contactForm">
+    <input type="text" id="name" placeholder="Full Name" required>
 
-            <input type="text" placeholder="Full Name" required>
+    <input type="email" id="email" placeholder="Email Address" required>
 
-            <input type="email" placeholder="Email Address" required>
+    <input type="tel" id="phone" placeholder="Phone Number">
 
-            <input type="tel" placeholder="Phone Number">
+    <textarea id="message" placeholder="Your Message" rows="6" required></textarea>
 
-            <textarea placeholder="Your Message" rows="6" required></textarea>
-
-            <button type="submit">Send Message</button>
-
-        </form>
+    <button type="submit">Send Message</button>
+</form>
 
     </div>
 
@@ -89,6 +92,31 @@
 </footer>
 
 <script src="js/script.js"></script>
+
+<script>
+    const contactForm = document.getElementById('contactForm');
+
+    contactForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const message = document.getElementById('message').value;
+
+        const whatsappMessage =
+            `Hello Carmine Ventures,\n\n` +
+            `Name: ${name}\n` +
+            `Email: ${email}\n` +
+            `Phone: ${phone}\n\n` +
+            `Message:\n${message}`;
+
+        const whatsappURL =
+            `https://wa.me/+233504368692 ?text=${encodeURIComponent(whatsappMessage)}`;
+
+        window.location.href = whatsappURL;
+    });
+</script>
 
 </body>
 </html>
